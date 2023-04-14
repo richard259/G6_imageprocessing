@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/edge_detection.sv,1679787502,systemVerilog,,C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/mac.sv,,edge_detection,,,,,,,,
+C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/edge_detection_tb.sv,1679956760,systemVerilog,,,,edge_detection_tb,,,,,,,,
+C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/mac.sv,1679692370,systemVerilog,,C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/edge_detection_tb.sv,,gaussian_mac;sobel_h;sobel_v,,,,,,,,
+C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,

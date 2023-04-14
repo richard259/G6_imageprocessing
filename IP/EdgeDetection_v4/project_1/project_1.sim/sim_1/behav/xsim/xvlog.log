@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/edge_detection.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_detection
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/mac.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module gaussian_mac
+INFO: [VRFC 10-311] analyzing module sobel_h
+INFO: [VRFC 10-311] analyzing module sobel_v
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/edge_detection_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module edge_detection_tb

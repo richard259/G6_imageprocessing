@@ -1,0 +1,18 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto cbfbdf6ebac74f55b774fc1ac3ff9015 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot edge_detection_tb_behav xil_defaultlib.edge_detection_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/edge_detection.sv" Line 3. Module edge_detection(WIDTH=8,HEIGHT=8) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/mac.sv" Line 8. Module sobel_h doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/richa/Desktop/Image Process/Code/EdgeDetection_v4/mac.sv" Line 15. Module sobel_v doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.sobel_h
+Compiling module xil_defaultlib.sobel_v
+Compiling module xil_defaultlib.edge_detection(WIDTH=8,HEIGHT=8)
+Compiling module xil_defaultlib.edge_detection_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot edge_detection_tb_behav

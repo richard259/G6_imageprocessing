@@ -1,0 +1,161 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "PinnedPorts":"",
+   "comment_0":"Massive input buffer to deal with potential for the frames in and out to have their
+blanking periods go out of sync. This might cause some pixels to be lost since the
+input from the camera does not respect any back-pressure.
+
+Needed to cover potentially 45 lines, so a depth of 3600 is needed.
+640*2 (bytes per row) * 45 (blanking rows) / 2 (relative frequency of output to input) * 8 (byte witdh)",
+   "comment_1":"With better control over the output,
+the buffer can be quite small",
+   "commentid":"comment_0|comment_1|",
+   "fillcolor_comment_0":"",
+   "fillcolor_comment_1":"",
+   "font_comment_0":"14",
+   "font_comment_1":"14",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CF -pg 1 -y 180 -defaultsOSRD
+preplace port vsync -pg 1 -y 820 -defaultsOSRD
+preplace port CG -pg 1 -y 210 -defaultsOSRD
+preplace port BTNU -pg 1 -y 410 -defaultsOSRD
+preplace port XCLK -pg 1 -y 700 -defaultsOSRD
+preplace port LED1 -pg 1 -y 400 -defaultsOSRD
+preplace port CPU_RESETN -pg 1 -y 1540 -defaultsOSRD
+preplace port DP -pg 1 -y 240 -defaultsOSRD
+preplace port LED2 -pg 1 -y 430 -defaultsOSRD
+preplace port VGA_VS -pg 1 -y 1410 -defaultsOSRD
+preplace port LED3 -pg 1 -y 460 -defaultsOSRD
+preplace port href -pg 1 -y 850 -defaultsOSRD
+preplace port PCLK -pg 1 -y 790 -defaultsOSRD
+preplace port SIOD_oe -pg 1 -y 630 -defaultsOSRD
+preplace port BTNL -pg 1 -y 670 -defaultsOSRD
+preplace port CA -pg 1 -y 30 -defaultsOSRD
+preplace port CB -pg 1 -y 60 -defaultsOSRD
+preplace port BTNC -pg 1 -y 380 -defaultsOSRD
+preplace port CC -pg 1 -y 90 -defaultsOSRD
+preplace port BTND -pg 1 -y 440 -defaultsOSRD
+preplace port CD -pg 1 -y 120 -defaultsOSRD
+preplace port VGA_HS -pg 1 -y 1440 -defaultsOSRD
+preplace port SIOC_oe -pg 1 -y 600 -defaultsOSRD
+preplace port CE -pg 1 -y 150 -defaultsOSRD
+preplace port BTNR -pg 1 -y 1320 -defaultsOSRD
+preplace port CLK_I -pg 1 -y 750 -defaultsOSRD
+preplace port reset -pg 1 -y 720 -defaultsOSRD
+preplace port DDR2_0 -pg 1 -y 1290 -defaultsOSRD
+preplace portBus AN -pg 1 -y 0 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -y 1320 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -y 1380 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -y 1350 -defaultsOSRD
+preplace portBus PWDN -pg 1 -y 1550 -defaultsOSRD
+preplace portBus SW -pg 1 -y 1370 -defaultsOSRD
+preplace portBus p_data -pg 1 -y 880 -defaultsOSRD
+preplace inst threshold_control_0 -pg 1 -lvl 6 -y 410 -defaultsOSRD
+preplace inst hier_vga_dram -pg 1 -lvl 6 -y 1370 -defaultsOSRD -resize 251 246
+preplace inst xlslice_0 -pg 1 -lvl 3 -y 880 -defaultsOSRD
+preplace inst edge_detection_0 -pg 1 -lvl 2 -y 920 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -y 1260 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 6 -y 1550 -defaultsOSRD
+preplace inst OV7670_config_rom_0 -pg 1 -lvl 4 -y 520 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 5 -y 1480 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 5 -y 140 -defaultsOSRD
+preplace inst camera_read_with_addr_0 -pg 1 -lvl 1 -y 850 -defaultsOSRD
+preplace inst OV7670_config_0 -pg 1 -lvl 5 -y 570 -defaultsOSRD
+preplace inst SCCB_inverted_logic_0 -pg 1 -lvl 6 -y 610 -defaultsOSRD
+preplace inst sevenSegment_0 -pg 1 -lvl 6 -y 140 -defaultsOSRD
+preplace inst compression_0 -pg 1 -lvl 5 -y 1330 -defaultsOSRD
+preplace inst vga_mux_0 -pg 1 -lvl 5 -y 1020 -defaultsOSRD
+preplace inst de_noise_0 -pg 1 -lvl 4 -y 1100 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 5 -y 750 -defaultsOSRD
+preplace inst self_init_0 -pg 1 -lvl 4 -y 660 -defaultsOSRD
+preplace netloc compression_0_PIP 1 5 1 N
+preplace netloc hier_vga_dram_gOut 1 6 1 NJ
+preplace netloc design_1_0_SIOC_oe 1 6 1 2170J
+preplace netloc CLK_I_1 1 0 6 10J 730 NJ 730 NJ 730 NJ 730 1300 60 NJ
+preplace netloc camera_read_with_addr_0_pixel_valid 1 1 4 350 810 NJ 810 NJ 810 1290
+preplace netloc self_init_0_start 1 4 1 1280
+preplace netloc PIPenable_1 1 5 1 1790J
+preplace netloc edge_detection_0_data_out 1 2 3 670 970 NJ 970 1300J
+preplace netloc p_data_1 1 0 1 NJ
+preplace netloc sevenSegment_0_CA 1 6 1 2160J
+preplace netloc sevenSegment_0_CB 1 6 1 2170J
+preplace netloc sevenSegment_0_CC 1 6 1 2180J
+preplace netloc sevenSegment_0_CD 1 6 1 2190J
+preplace netloc edge_detection_0_addr 1 2 3 640J 950 NJ 950 1280
+preplace netloc sevenSegment_0_CE 1 6 1 2170J
+preplace netloc sevenSegment_0_CF 1 6 1 NJ
+preplace netloc sevenSegment_0_CG 1 6 1 2170J
+preplace netloc btnc_0_1 1 0 4 NJ 670 NJ 670 NJ 670 NJ
+preplace netloc hier_vga_dram_hSync 1 6 1 NJ
+preplace netloc btnc_0_2 1 0 6 20J 400 NJ 400 NJ 400 NJ 400 NJ 400 NJ
+preplace netloc threshold_control_0_led1 1 6 1 2190J
+preplace netloc btndown_0_1 1 0 6 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ
+preplace netloc threshold_control_0_led2 1 6 1 2170J
+preplace netloc threshold_control_0_led3 1 6 1 NJ
+preplace netloc xlconstant_1_dout 1 5 1 1770
+preplace netloc design_1_0_SIOD_oe 1 6 1 NJ
+preplace netloc camera_read_with_addr_0_wr_addr 1 1 4 330J 820 650J 940 NJ 940 N
+preplace netloc de_noise_0_output_valid 1 4 1 1220
+preplace netloc clk_wiz_0_clk_100 1 5 1 1820
+preplace netloc OV7670_config_0_SCCB_interface_data 1 5 1 1790
+preplace netloc SW_1 1 0 5 NJ 1370 NJ 1370 NJ 1370 920 1480 NJ
+preplace netloc btnup_0_1 1 0 6 20J 420 NJ 420 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc xlslice_1_Dout 1 4 1 1300J
+preplace netloc OV7670_config_rom_0_dout 1 4 1 1290
+preplace netloc de_noise_0_data_out 1 4 1 1210
+preplace netloc xlslice_0_Dout 1 3 1 890
+preplace netloc OV7670_config_0_SCCB_interface_addr 1 5 1 1800
+preplace netloc edge_detection_0_output_valid 1 2 3 630J 980 900 980 1270J
+preplace netloc camera_read_with_addr_0_pixel_data 1 1 4 340J 1020 660J 820 NJ 820 1300
+preplace netloc BTNR_1 1 0 5 NJ 1320 NJ 1320 NJ 1320 NJ 1320 1210J
+preplace netloc clk_wiz_0_clk_24 1 3 4 950 590 1280 470 1740 700 NJ
+preplace netloc sevenSegment_0_DP 1 6 1 2170J
+preplace netloc threshold_control_0_COMPRESSION 1 4 3 1310 290 1800 290 2170
+preplace netloc OV7670_config_0_SCCB_interface_start 1 5 1 1810
+preplace netloc sevenSegment_0_AN 1 6 1 2150J
+preplace netloc hier_vga_dram_DDR2_0 1 6 1 2170J
+preplace netloc hier_vga_dram_rOut 1 6 1 NJ
+preplace netloc compression_0_recognized_int2 1 5 1 1760
+preplace netloc de_noise_0_addr 1 4 1 1230
+preplace netloc compression_0_recognized_int3 1 5 1 1780
+preplace netloc compression_0_recognized_int 1 5 1 1750
+preplace netloc OV7670_config_0_rom_addr 1 3 3 940 430 NJ 430 1730
+preplace netloc threshold_control_0_EDGE_DETECTION 1 1 6 370 280 NJ 280 NJ 280 NJ 280 1810 280 2160
+preplace netloc href_1 1 0 1 10J
+preplace netloc PCLK_1 1 0 6 20 950 360 1030 NJ 1030 910 990 1260 1540 1800J
+preplace netloc vsync_1 1 0 1 10J
+preplace netloc resetn_0_1 1 0 6 NJ 1540 NJ 1540 NJ 1540 NJ 1540 1210J 1560 1810J
+preplace netloc camera_read_with_addr_0_detection 1 1 4 310 1200 NJ 1200 NJ 1200 1250J
+preplace netloc camera_read_with_addr_0_frame_done 1 1 5 320 1040 NJ 1040 920 1000 1240 1550 1820J
+preplace netloc xlconstant_0_dout 1 6 1 NJ
+preplace netloc vga_mux_0_OUTPXL 1 5 1 1770
+preplace netloc reset_1 1 0 5 20J 740 NJ 740 NJ 740 NJ 740 NJ
+preplace netloc hier_vga_dram_vSync 1 6 1 NJ
+preplace netloc SCCB_inverted_logic_0_ready 1 4 3 1320 460 1810J 520 2150
+preplace netloc hier_vga_dram_bOut 1 6 1 NJ
+preplace netloc threshold_control_0_DENOISE 1 3 4 930 300 NJ 300 1820 300 2150
+preplace cgraphic comment_1 place right 112 -227 textcolor 4 linecolor 3
+preplace cgraphic comment_0 place top 14 -332 textcolor 4 linecolor 3
+levelinfo -pg 1 -10 170 510 790 1090 1540 2000 2210 -top -20 -bot 1610
+",
+   "linecolor_comment_0":"",
+   "linecolor_comment_1":"",
+   "linktoobj_comment_0":"/hier_vga_dram",
+   "linktoobj_comment_1":"/hier_vga_dram",
+   "linktotype_comment_0":"bd_cell",
+   "linktotype_comment_1":"bd_cell",
+   "textcolor_comment_0":"",
+   "textcolor_comment_1":""
+}
+{
+   """""""da_axi4_cnt""""""":"4",
+   """""""da_board_cnt""""""":"6",
+   """""""da_clkrst_cnt""""""":"2",
+   """""""da_mb_cnt""""""":"1"
+}
+{
+   "/hier_vga_dram/comment_4":"comment_0",
+   "/hier_vga_dram/comment_5":"comment_1"
+}
