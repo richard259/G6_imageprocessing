@@ -30,6 +30,9 @@ Requires Vivado 2018.3. Download this reposirtory, and open the project file: /s
 /IP
 - custom IP block source files
 
+/Python
+- python code for training 3-layer nerual network and saving weights as 16-bit ints
+
 ## Authors
 - Richard Barrie
 - Savo Bajic
