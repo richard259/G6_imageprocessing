@@ -11,11 +11,13 @@ ECE532 Project: FPGA accellerated image processing with handwritten digit recogn
 
 ## Description
 
-This project uses the Nexys 4 DDR board to do image processing and handwritten digit recognition. For more detailed information, see the report: /doc/report.pdf and video: /doc/video.mp4
+This project uses the Nexys 4 DDR board to do image processing and handwritten digit recognition. For more detailed information, see the report: /doc/report.pdf
 
 ## How to use
 
-Requires Vivado 2018.3. Download this reposirtory, and open the project file: /src/.xpr. Update IP location in the settings to be the /IP directory in this repository. 
+Nexys 4 DDR board is required with VGA monitor attached to the VGA port, and the OV7670 VGA camera module connected to the PMOD 1 input.
+
+Requires Vivado 2018.3. Download this reposirtory, and open the project file: /src/camera_dram_03_25.xpr using Vivado.  Update IP location in the settings to be the /IP directory in this repository.
 
 ## Structure
 
